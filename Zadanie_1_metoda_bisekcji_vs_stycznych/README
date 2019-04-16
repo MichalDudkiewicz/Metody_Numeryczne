@@ -1,0 +1,35 @@
+﻿Proszę uruchomić Main.py. Po uruchomieniu proszę postępować zgodnie z komunikatami wyświetlanymi w konsoli.
+
+Celem programu jest zaimplementowanie i porównanie ze sobą dwóch metod rozwiązywania (znajdowania miejsca zerowego) równań nieliniowych.
+Metody wyznaczania miejsca zerowego: 
+
+-Metoda bisekcji 
+-Metoda stycznych
+
+Oszacowanie dokładności wyniku:
+
+|f(xi)|<ε
+
+Program implementuje dwa kryteria stopu: 
+
+1. osiągnięcie zadanej dokładności obliczeń;
+2. wykonanie określonej przez użytkownika liczby iteracji.
+
+Program ma wbudowane kilka różnych funkcji nieliniowych (które można zmienić w pliku funkcje.py w funkcjach wzor_funkcji oraz wart_funkcji):
+wielomian, trygonometryczną, wykładniczą i ich złożenia. Użytkownik wybiera jedną z funkcji, 
+określa przedział na którym poszukiwane jest miejsce zerowe oraz wybiera kryterium zatrzymania algorytmu: 
+
+a) spełnienie warunku nałożonego na dokładność albo 
+b) osiągnięcie zadanej liczby iteracji. 
+
+Następnie użytkownik wprowadza ε (w przypadku wybrania pierwszego kryterium) lub ilość iteracji (w przypadku wyboru drugiego kryterium). 
+Program wykonuje obliczenia przy użyciu obu metod (bisekcja oraz jeden z przydzielonych wariantów), 
+wyświetla wyniki i rysuje wykres wybranej funkcji na zadanym przedziale, zaznaczając rozwiązania na wykresie. 
+Program sprawdza poprawność założenia o przeciwnych znakach funkcji na krańcach badanego przedziału. 
+Niesprawdzana jest prawdziwości założeń o stałym znaku pochodnych na przedziale.
+Program szacuje dokładność obu metod. Porównuje ich skuteczność: 
+ile iteracji potrzebna do osiągnięcia zadanej dokładności przy użyciu każdej z metod i jaką dokładność osiąga każda metoda dla określonej 
+liczby iteracji. Gdy założenie o stałym znaku pochodnej w badanym przedziale jest niespełnione program może pokazać rozwiązanie 
+poza badanym przedziałem dla metody Newtona.
+
+wymagane biblioteki: matplotlib, numpy, sympy

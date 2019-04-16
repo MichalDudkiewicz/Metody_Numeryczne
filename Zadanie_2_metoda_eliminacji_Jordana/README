@@ -1,0 +1,10 @@
+﻿Program oblicza rozwiązania dowolnego układu równań zapisanego w formie macierzy w pliku dane.txt. Wykrywa sytuacje, gdy układ jest sprzeczny lub nieoznaczony. 
+Element podstawowy jest znajdowany automatycznie. Użyto metody eliminacji Jordana.
+
+W celu obliczenia układu równań należy zapisać go w formie macierzy do pliku dane.txt w następującej formie:
+
+- poszczególne elementy macierzy oddzielić conajmniej jedną spacją
+- macierz od wektora oddzielić znakiem "|" i zapisać ich wiersze w jednej linii
+- należy upewnić się czy liczba elementów macierzy jest prawdiłowa, a następnie zapisać i zamknąć plik dane.txt oraz uruchomić program Main.py
+
+Wymagane biblioteki: math
